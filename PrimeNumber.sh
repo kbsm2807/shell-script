@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "This script checks if a number is prime."
-echo "Enter a number: " $number
+read -p "Enter a number: " number
 if (( number <= 1 )); then
     echo "$number is not a prime number."
     exit 0
@@ -12,3 +12,4 @@ for (( i=2; i*i<=number; i++ )); do
     fi
 done
 echo "$number is a prime number."
+exit 0
